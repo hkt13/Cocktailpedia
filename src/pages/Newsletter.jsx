@@ -12,7 +12,7 @@ const { setalert } = useGlobalContext()
     }
 
     if(submit){
-       return <Navigate to="/Cocktailpedia"/>
+       return <Navigate to="/"/>
     }
 
     return(
