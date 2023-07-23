@@ -6,7 +6,6 @@ const AppContext = React.createContext()
 
 
 const AppProvider=({ children })=>{
-    console.log('came')
 const [loading, setloading] = useState(true)
 const [cocktailList, setcocktailList] = useState([])
 const [searchValue, setsearchValue] = useState('')
@@ -32,7 +31,6 @@ const fetchData=useCallback(async ()=>{
    },[searchValue])
 
 useEffect( ()=>{
-    console.log('inefefct')
      fetchData();
 },[searchValue, fetchData])
 

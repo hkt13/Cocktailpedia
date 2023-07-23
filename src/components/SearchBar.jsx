@@ -5,10 +5,6 @@ const SearchBar=()=>{
     const { setsearchValue } = useGlobalContext()
 const inputValue = useRef(null)
 
-//     const HandleClick=()=>{
-
-//         console.log(inputValue.current.value)
-// }
 
 const HandleChange=()=>{
    setsearchValue(inputValue.current.value)
@@ -20,7 +16,6 @@ function handleSubmit(e) {
   useEffect(()=>{
 
     inputValue.current.focus();
-    console.log('yes')
     },[])
     
 

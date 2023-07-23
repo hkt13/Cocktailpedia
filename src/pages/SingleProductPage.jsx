@@ -19,7 +19,7 @@ if (loading) {
                         <section className="page"  key={item.idDrink}>
                             <div className="singleProduct">
                                 <header>
-                                    <Link className="btn" to='/'>Back Home</Link>
+                                    <Link className="btn" to='/Cocktailpedia/'>Back Home</Link>
                                     <h3>{item.strDrink}</h3>
                                 </header>
                                 <div className="drink">
