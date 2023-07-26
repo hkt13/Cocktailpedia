@@ -1,4 +1,4 @@
-<h1 align="center">Cocktailpedia</h1>
+<h1 align="center">MixMaster</h1>
 <h2>About the project</h2>
 
 <p>Welcome to our <b>Cocktail Info and Mixing App!</b>.This React-based application is a hub for cocktail enthusiasts, where you can explore a diverse collection of cocktails, learn about their fascinating histories, and discover the art of mixing your favorite beverages.</p>
