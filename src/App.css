@@ -374,15 +374,15 @@ margin-bottom: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
   padding: 2rem;
   opacity: 0;
-  transform: translateY(-125px);
+  transform: translate(-50%, -150px);
   transition: opacity .5s ease, transform .5s ease;
-  top: 2rem;
-  left: 37%;
+  top: 1rem;
+  left: 50%;
 }
 
 .show{
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%);
 }
 
 .alert p{

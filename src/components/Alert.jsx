@@ -1,6 +1,8 @@
 import { useGlobalContext } from "../context";
 import { useEffect, useState } from "react";
 const Alert=()=>{
+ 
+// console.log(targetdiv)
     const [showTransition, setShowTransition] = useState(false);
     const {setalert} = useGlobalContext();
 
@@ -11,14 +13,28 @@ setTimeout(() => {
   }, 500);
     }
 
+
     useEffect(() => {
+ 
+      const targetdiv = document.querySelector('.alert')
+      function handleClickOutside(event) {
+        if (targetdiv && !targetdiv.contains(event.target)) {
+          HandleClick();
+        }
+      }
+  
+      document.addEventListener('click', handleClickOutside);
+      
         const delay = 800; // 1000ms delay (1 second)
         const timer = setTimeout(() => {
           setShowTransition(true);
         }, delay);
     
         // Clearing the timer to avoid memory leaks
-        return () => clearTimeout(timer);
+        return () => {
+          clearTimeout(timer);
+          document.removeEventListener('click', handleClickOutside);
+        };
       }, []);
     return (
         <>

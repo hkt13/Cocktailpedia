@@ -7,7 +7,7 @@ const Navbar=()=>{
             <div className="navbar">
                <span className="logo">MixMaster</span>
                <div className="nav-links">
-               <NavLink to='/Cocktailpedia/' className='nav-link'>Home</NavLink>
+               <NavLink to='/MixMaster/' className='nav-link'>Home</NavLink>
                <NavLink to='/About' className='nav-link'>About</NavLink>
                <NavLink to='/Newsletter' className='nav-link'>Newsletter</NavLink>
                </div>
